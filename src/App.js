@@ -1,9 +1,9 @@
-import { Routes, Route } from "react-router-dom";
-import Header from "./Compontes/Header/Header";
-import Mission from "./Compontes/Mission";
-import Profile from "./Compontes/Profile";
-import "./App.css";
-import PageNotFound from "./PagenotFound/PageNotFound";
+import { Routes, Route } from 'react-router-dom';
+import Header from './Compontes/Header/Header';
+import Mission from './Compontes/Mission';
+import Profile from './Compontes/Profile';
+import './App.css';
+import PageNotFound from './PagenotFound/PageNotFound';
 // import Dragon from "./Compontes/Dragon/Dragon";
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
             <Route index element={<Profile />} />
           </Route>
         </Route>
-        <Route path="*" element={<PageNotFound />}></Route>
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>
   );
