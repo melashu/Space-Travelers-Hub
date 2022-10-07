@@ -23,12 +23,12 @@
   flex-direction: column;
 }
 
-.rocket-button{
-    width: max-content;
+.rocket-button {
+  width: max-content;
 }
 
 .rocket-name {
-    color: #00D7C6;
+  color: #00d7c6;
 }
 
 .desc {
