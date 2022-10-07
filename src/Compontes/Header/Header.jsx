@@ -21,7 +21,7 @@ const Header = () => {
         <li>
           {" "}
           <NavLink
-            to="/"
+            to="/dragon"
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
           >
             Dragons

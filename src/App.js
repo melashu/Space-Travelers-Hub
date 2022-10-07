@@ -1,8 +1,9 @@
-import { Routes, Route } from 'react-router-dom';
-import Header from './Compontes/Header/Header';
-import Mission from './Compontes/Mission';
-import Profile from './Compontes/Profile';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Header from "./Compontes/Header/Header";
+import Mission from "./Compontes/Mission";
+import Profile from "./Compontes/Profile";
+import "./App.css";
+import PageNotFound from "./PagenotFound/PageNotFound";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route index element={<Profile />} />
           </Route>
         </Route>
+        <Route path="*" element={<PageNotFound />}></Route>
       </Routes>
     </div>
   );
