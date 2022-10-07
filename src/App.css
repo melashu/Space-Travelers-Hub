@@ -1,0 +1,28 @@
+.loadingStatus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 52px;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+.button-container {
+  width: 200px;
+  padding: 5px;
+}
+
+.tables {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.rocket {
+  flex: 1;
+}
+
+.mission {
+  flex: 1;
+}
