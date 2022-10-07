@@ -26,12 +26,12 @@ This is a web application for a company that provides commercial and scientific 
 To get a local copy up and running follow these simple example steps.
 
 1. Navigate to a folder where you want the cloned file to appear
-
+   
 2. Clone this repo in your terminal or git bash using the command
 
-   ```
   https://github.com/melashu/Space-Travelers-Hub.git
-   ```
+
+
 
 3. run `npm install ` to install all the necessary dependencies including the linters
 
