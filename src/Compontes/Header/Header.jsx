@@ -1,34 +1,34 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import "./Header.css";
-import logo from "../../images/logo.png";
+import React from 'react';
+import { NavLink, Link } from 'react-router-dom';
+import './Header.css';
+import logo from '../../images/logo.png';
+
 const Header = () => {
-  let activeStyle = {
-    textDecoration: "underline",
+  const activeStyle = {
+    textDecoration: 'underline',
   };
   return (
     <header className="header">
-      <NavLink
+      <Link
         to="/"
-        style={({ isActive }) => (isActive ? activeStyle : undefined)}
       >
         <div className="logo">
           <img src={logo} alt="" />
           <span className="comapny-title"> Space-Travelers-Hub</span>
         </div>
-      </NavLink>
+      </Link>
       <ul className="list">
         <li>
-          {" "}
+          {' '}
           <NavLink
-            to="/dragon"
+            to="/rocket"
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
           >
-            Dragons
+            Rocket
           </NavLink>
         </li>
         <li>
-          {" "}
+          {' '}
           <NavLink
             to="/mission"
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
@@ -37,7 +37,7 @@ const Header = () => {
           </NavLink>
         </li>
         <li>
-          {" "}
+          {' '}
           <NavLink
             to="/profile"
             style={({ isActive }) => (isActive ? activeStyle : undefined)}

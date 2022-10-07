@@ -2,7 +2,6 @@
 
 This is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
 
-
 ## Built With
 
 - React 
@@ -57,12 +56,13 @@ To get a local copy up and running follow these simple example steps.
 
 - [Github](https://github.com/Masuduzzaman811)
 - [LinkedIn](https://www.linkedin.com/in/masuduzzaman811/)
-
-
+- [Twitter](https://twitter.com/twitterhandle)
+  
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
+
 
 Feel free to check the [issues page](https://github.com/melashu/Space-Travelers-Hub/issues).
 
@@ -77,3 +77,9 @@ Give a ⭐️ if you like this project!
 - To React creater 
 - To Microverse Crew 
 - To [Dipesh Malvia](https://github.com/dmalvia)
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+

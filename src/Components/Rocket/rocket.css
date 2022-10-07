@@ -1,0 +1,36 @@
+.rockets {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.rocket-list {
+  display: flex;
+  row-gap: 1.5rem;
+}
+
+.banner {
+  flex: 1;
+  width: 200px;
+  height: 200px;
+  padding-right: 1rem;
+}
+
+.rocket-list .list {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+}
+
+.rocket-button{
+    width: max-content;
+}
+
+.rocket-name {
+    color: #00D7C6;
+}
+
+.desc {
+  text-align: justify;
+}

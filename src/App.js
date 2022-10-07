@@ -4,7 +4,7 @@ import Mission from './Compontes/Mission';
 import Profile from './Compontes/Profile';
 import './App.css';
 import PageNotFound from './PagenotFound/PageNotFound';
-// import Dragon from "./Compontes/Dragon/Dragon";
+import Rocket from './Components/Rocket/Rocket';
 
 function App() {
   return (
@@ -12,7 +12,10 @@ function App() {
       <Header />
       <Routes>
         <Route to="/">
-          <Route index element={null} />
+          <Route index element={<Rocket />} />
+          <Route path="rocket">
+            <Route index element={<Rocket />} />
+          </Route>
           <Route path="mission">
             <Route index element={<Mission />} />
           </Route>

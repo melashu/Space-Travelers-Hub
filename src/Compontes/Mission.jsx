@@ -1,15 +1,16 @@
-import React, { useEffect } from "react";
-import Table from "react-bootstrap/Table";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { Badge, Button } from "react-bootstrap";
-import { useDispatch, useSelector } from "react-redux";
+import React, { useEffect } from 'react';
+import Table from 'react-bootstrap/Table';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Badge, Button } from 'react-bootstrap';
+import { useDispatch, useSelector } from 'react-redux';
 import {
   getLoadingState,
   getMissionState,
   joinMission,
   leaveMission,
   missionThunk,
-} from "../Store/reducers";
+} from '../Store/reducers';
+
 const Mission = () => {
   const missions = useSelector(getMissionState);
   const loadingStatus = useSelector(getLoadingState);
@@ -19,24 +20,24 @@ const Mission = () => {
   }, [dispatch, missions.length]);
   const rows = missions.map((row, index) => (
     <tr key={index + 1}>
-      <td>{row["mission_name"]}</td>
-      <td>{row["description"]}</td>
+      <td>{row.mission_name}</td>
+      <td>{row.description}</td>
       <td className="">
-        {" "}
-        {row["reserved"] ? (
+        {' '}
+        {row.reserved ? (
           <Badge bg="primary">Active Member </Badge>
         ) : (
           <Badge bg="secondary">NOT Member </Badge>
         )}
       </td>
       <td className="button-container status">
-        {" "}
-        {row["reserved"] ? (
+        {' '}
+        {row.reserved ? (
           <Button
             size="lg"
             variant="outline-danger"
             onClick={() => {
-              dispatch(leaveMission(row["mission_id"]));
+              dispatch(leaveMission(row.mission_id));
             }}
           >
             Leave Missions
@@ -46,7 +47,7 @@ const Mission = () => {
             variant="outline-secondary"
             size="lg"
             onClick={() => {
-              dispatch(joinMission(row["mission_id"]));
+              dispatch(joinMission(row.mission_id));
             }}
           >
             Joining Missions
@@ -57,29 +58,29 @@ const Mission = () => {
   ));
   return (
     <>
-      {loadingStatus === "idel" && (
+      {loadingStatus === 'idel' && (
         <Badge bg="primary" className="loadingStatus">
           Initializing....
         </Badge>
       )}
-      {loadingStatus === "pending" && (
+      {loadingStatus === 'pending' && (
         <Badge bg="info" className="loadingStatus">
           Pending....
         </Badge>
       )}
-      {loadingStatus === "rejected" && (
+      {loadingStatus === 'rejected' && (
         <Badge bg="danger" className="loadingStatus">
           Something wents wrong
         </Badge>
       )}
-      {loadingStatus === "fulfilled" && (
+      {loadingStatus === 'fulfilled' && (
         <Table striped hover size="md" responsive bordered>
           <thead>
             <tr>
               <th>Mission</th>
               <th>Description</th>
               <th>Status</th>
-              <th></th>
+              <th />
             </tr>
           </thead>
           <tbody>{rows}</tbody>
