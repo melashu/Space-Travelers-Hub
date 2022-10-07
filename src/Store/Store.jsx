@@ -5,7 +5,7 @@ import missionReducer from "./reducers";
 const store = configureStore({
   reducer: {
     mission: missionReducer,
-    // dragon:dragonreducer,
+    // dragon: dragonreducer,
     rokets: {},
   },
 });
