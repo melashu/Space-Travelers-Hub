@@ -16,10 +16,10 @@ const Mission = () => {
   const loadingStatus = useSelector(getLoadingState);
   const dispatch = useDispatch();
   useEffect(() => {
-    missions.length === 0 && dispatch(missionThunk());
+    if (missions.length === 0) dispatch(missionThunk());
   }, [dispatch, missions.length]);
-  const rows = missions.map((row, index) => (
-    <tr key={index + 1}>
+  const rows = missions.map((row) => (
+    <tr key={row.mission_id}>
       <td>{row.mission_name}</td>
       <td>{row.description}</td>
       <td className="">
@@ -80,7 +80,6 @@ const Mission = () => {
               <th>Mission</th>
               <th>Description</th>
               <th>Status</th>
-              <th />
             </tr>
           </thead>
           <tbody>{rows}</tbody>

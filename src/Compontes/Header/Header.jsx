@@ -9,9 +9,7 @@ const Header = () => {
   };
   return (
     <header className="header">
-      <Link
-        to="/"
-      >
+      <Link to="/" style={{ textDecoration: 'none' }}>
         <div className="logo">
           <img src={logo} alt="" />
           <span className="comapny-title"> Space-Travelers-Hub</span>

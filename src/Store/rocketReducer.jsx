@@ -1,9 +1,10 @@
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import axios from 'axios';
+/* eslint-disable */
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import axios from "axios";
 // Async
-const rocketThunk = createAsyncThunk('rocket', async () => {
+const rocketThunk = createAsyncThunk("rocket", async () => {
   try {
-    const respons = await axios.get('https://api.spacexdata.com/v3/rockets');
+    const respons = await axios.get("https://api.spacexdata.com/v3/rockets");
     return respons.data;
   } catch (error) {
     return error;
@@ -11,10 +12,10 @@ const rocketThunk = createAsyncThunk('rocket', async () => {
 });
 const initialState = {
   rockets: [],
-  rocketloading: 'idel',
+  rocketloading: "idel",
 };
 const rocketReducer = createSlice({
-  name: 'rocket',
+  name: "rocket",
   initialState,
   reducers: {
     reserveRocket: (state, action) => {
@@ -44,19 +45,15 @@ const rocketReducer = createSlice({
       state.rockets = payload;
     },
     [rocketThunk.pending]: (state) => {
-      state.rocketloading = 'pending';
+      state.rocketloading = "pending";
     },
     [rocketThunk.rejected]: (state) => {
-      state.rocketloading = 'rejected';
+      state.rocketloading = "rejected";
     },
   },
 });
 const getRocketState = (state) => state.rockets.rockets;
 const getRocketLoading = (state) => state.rockets.rocketloading;
 export const { reserveRocket, cancleRocket } = rocketReducer.actions;
-export {
-  rocketThunk,
-  getRocketState,
-  getRocketLoading,
-};
+export { rocketThunk, getRocketState, getRocketLoading };
 export default rocketReducer.reducer;
