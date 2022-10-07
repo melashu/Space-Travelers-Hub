@@ -3,13 +3,11 @@ import axios from "axios";
 //Async
 const rocketThunk = createAsyncThunk("rocket", async () => {
   try {
-    try {
-      const respons = await axios.get("https://api.spacexdata.com/v3/rockets");
-      return respons.data;
-    } catch (error) {
-      return error;
-    }
-  } catch (error) {}
+    const respons = await axios.get("https://api.spacexdata.com/v3/rockets");
+    return respons.data;
+  } catch (error) {
+    return error;
+  }
 });
 const initialState = {
   rockets: [],
