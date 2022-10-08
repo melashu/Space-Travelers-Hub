@@ -5,3 +5,9 @@ exports[`Check Homepage renders correctly 1`] = `
   className="rockets"
 />
 `;
+
+exports[`Rockets Component renders rockets 1`] = `
+<div
+  className="rockets"
+/>
+`;

@@ -40,7 +40,6 @@ const rocketReducer = createSlice({
     },
   },
   extraReducers: {
-    // rocket/fulfilled
     [rocketThunk.fulfilled]: (state, { payload }) => {
       state.rockets = payload;
     },
