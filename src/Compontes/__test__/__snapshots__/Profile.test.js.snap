@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should Header render correctly Test Profile Componenet 1`] = `<profile />`;
+
+exports[`Should Header render correctly Test Profile Componenet 2`] = `<profile />`;
+
+exports[`Test Profile Componenet 1`] = `<profile />`;
