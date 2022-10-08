@@ -3,10 +3,11 @@ import { useSelector } from 'react-redux';
 import { Table } from 'react-bootstrap';
 import { getMissionState } from '../Store/reducers';
 import { getRocketState } from '../Store/rocketReducer';
+import { useAppSelector } from '../hooks/hooks';
 
 const Profile = () => {
-  const missions = useSelector(getMissionState);
-  const rockets = useSelector(getRocketState);
+  const missions = useAppSelector(getMissionState);
+  const rockets = useAppSelector(getRocketState);
   const filteredMission = missions.filter((mission) => mission.reserved);
   const reserevedMission = filteredMission.map((mission) => (
     <tr key={mission.mission_id}>
@@ -22,7 +23,7 @@ const Profile = () => {
   ));
 
   return (
-    <div className="tables">
+    <div className="tables" data-testid="table">
       <div className="rocket">
         <h2>Resireved Rocket</h2>
         <Table hover bordered>
