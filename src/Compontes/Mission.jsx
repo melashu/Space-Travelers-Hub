@@ -74,7 +74,7 @@ const Mission = () => {
         </Badge>
       )}
       {loadingStatus === 'fulfilled' && (
-        <Table striped hover size="md" responsive bordered>
+        <Table data-testid="table" striped hover size="md" responsive bordered>
           <thead>
             <tr>
               <th>Mission</th>

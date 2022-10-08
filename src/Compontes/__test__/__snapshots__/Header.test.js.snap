@@ -1,7 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Should Header render correctly Test Header Componenet 1`] = `<header />`;
-
-exports[`Should Header render correctly Test Mission Componenet 1`] = `<header />`;
-
-exports[`Should mission render correctly Test Mission Componenet 1`] = `<mission />`;
+exports[`Should Header render correctly Test Header Componenet 1`] = `null`;

@@ -1,7 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Should mission render correctly Mission Componenet 1`] = `<mission />`;
-
-exports[`Should mission render correctly Test Mission Componenet 1`] = `<mission />`;
-
-exports[`Should mission render correctly Test Mission Componenet 2`] = `<mission />`;
+exports[`Should mission render correctly Test Mission Componenet 1`] = `null`;
