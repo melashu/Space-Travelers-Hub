@@ -14,10 +14,9 @@ This is a web application for a company that provides commercial and scientific 
 ### Comming soon
 
 ## Screenshot 
+![image](https://user-images.githubusercontent.com/30173722/194749944-505b2f65-548e-4d48-8202-ac7802cb180a.png)
 
-### Comming Soon
 ## Getting Started
-
 ### Prerequisites
 
 - You should be having [Node.js](https://nodejs.org/en/) installed on your computer
