@@ -11,7 +11,7 @@ This is a web application for a company that provides commercial and scientific 
 - JSX
 
 ## Live Demo
-### Comming soon
+[Go live](https://spacehubs.netlify.app/)
 
 ## Screenshot 
 ![image](https://user-images.githubusercontent.com/30173722/194749944-505b2f65-548e-4d48-8202-ac7802cb180a.png)
