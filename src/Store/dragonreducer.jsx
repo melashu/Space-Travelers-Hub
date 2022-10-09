@@ -1,6 +1,6 @@
+/* eslint-disable */
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
-//Async
 const dragonThunk = createAsyncThunk("dragon", async () => {
   try {
     try {
@@ -11,7 +11,6 @@ const dragonThunk = createAsyncThunk("dragon", async () => {
     }
   } catch (error) {}
 });
-
 
 const initialState = {
   dragons: [],
@@ -43,7 +42,7 @@ const dragonReducer = createSlice({
     },
   },
   extraReducers: {
-    //dragon/fulfilled
+    // dragon/fulfilled
     [dragonThunk.fulfilled]: (state, { payload }) => {
       state.dragons = payload;
     },
@@ -59,9 +58,5 @@ const dragonReducer = createSlice({
 const getDragonState = (state) => state.dragon.dragons;
 const getDragonLoading = (state) => state.dragon.dragonloading;
 export const { reserveDragon, cancleDragon } = dragonReducer.actions;
-export {
-  dragonThunk,
-  getDragonState,
-  getDragonLoading,
-};
+export { dragonThunk, getDragonState, getDragonLoading };
 export default dragonReducer.reducer;
