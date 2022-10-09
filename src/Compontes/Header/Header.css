@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  box-shadow: 1px 2px 5px #999;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: rgb(3, 1, 1);
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
+}
+
+.comapny-title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+li {
+  font-size: 40px;
+}
+
+li a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 25px;
+}
