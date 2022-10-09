@@ -21,8 +21,27 @@
 
 .rocket {
   flex: 1;
+  -webkit-box-shadow: 6px 4px 8px 9px #999;
+  box-shadow: 6px 4px 8px 9px #999;
 }
 
 .mission {
   flex: 1;
+  -webkit-box-shadow: 6px 4px 8px 9px #999;
+  box-shadow: 6px 4px 8px 9px #999;
+}
+
+.dragon {
+  flex: 1;
+  -webkit-box-shadow: 6px 4px 8px 9px #999;
+  box-shadow: 6px 4px 8px 9px #999;
+}
+
+.tables h2 {
+  text-align: center;
+}
+
+.mainContainer {
+  padding-bottom: 100px;
+  min-height: 75vh;
 }

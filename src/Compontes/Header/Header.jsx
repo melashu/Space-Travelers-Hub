@@ -28,6 +28,15 @@ const Header = () => {
         <li>
           {' '}
           <NavLink
+            to="/dragon"
+            style={({ isActive }) => (isActive ? activeStyle : undefined)}
+          >
+            Dragon
+          </NavLink>
+        </li>
+        <li>
+          {' '}
+          <NavLink
             to="/mission"
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
           >
@@ -40,7 +49,7 @@ const Header = () => {
             to="/profile"
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
           >
-            Profile
+            My Profile
           </NavLink>
         </li>
       </ul>

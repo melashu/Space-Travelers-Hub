@@ -8,6 +8,8 @@
 .rocket-list {
   display: flex;
   row-gap: 1.5rem;
+  -webkit-box-shadow: 6px 4px 8px 9px #999;
+  box-shadow: 6px 4px 8px 9px #999;
 }
 
 .banner {

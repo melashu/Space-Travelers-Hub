@@ -13,8 +13,8 @@ const Dragon = () => {
   const dragons = useSelector(getDragonState);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(dragonThunk());
-  }, [dispatch]);
+    if (dragons.length === 0) dispatch(dragonThunk());
+  }, [dispatch, dragons.length]);
 
   const dragonsList = dragons.map((dragon) => (
     <div className="dragon-list" key={dragon.id}>
