@@ -29,16 +29,20 @@ To get a local copy up and running follow these simple example steps.
    
 2. Clone this repo in your terminal or git bash using the command
 
-  https://github.com/melashu/Space-Travelers-Hub.git
+  `git clone https://github.com/melashu/Space-Travelers-Hub.git`
 
+3. `cd Space-Travelers-Hub`
 
+4. run `npm install ` to install all the necessary dependencies including the linters
 
-3. run `npm install ` to install all the necessary dependencies including the linters
-
-4. Navigate to the folder called Math Magician/ and open this project using your editor
+4. `npm start`
 
 ### Run start 
 - This will run the react app in your browser 
+
+
+### To Run Test
+- Run `npm run test`
 
 ### Deployment
 
