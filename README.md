@@ -1,6 +1,6 @@
 # Space-Travelers-Hub
 
-This is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
+This is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions. The app built using React and Redux.
 
 ## Built With
 
